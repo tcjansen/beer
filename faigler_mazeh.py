@@ -27,20 +27,12 @@ class FaiglerMazehFit():
 		self.g = g
 		self.M_p = M_p
 		self.K = K 
-
-		# # set the mass if given
-		# if not not M_p:
-		# 	self.M_p = M_p
 	
 		# get the mass from the ellipsoidal amplitude, if given.
 		# u is the limb-darkening coefficient, range is 0-1
 		if not M_p and not not A_ellip and not not logg:
 			self.u = self.LDC()
 			self.M_p = self.m_from_ellip()
-
-		# # get the planetary mass from the beaming amplitude, if given
-		# if not M_p and not not A_beam:
-		# 	self.M_p = self.m_from_beam()
 
 		# star-planet separation [au] assuming a circular orbit
 		if not a and not not M_p:
