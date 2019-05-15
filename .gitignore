@@ -1,4 +1,7 @@
 *
-!.*
+!.gitignore
 !faigler_mazeh.py
 !mcmc.py
+!beer.py
+!models.py
+!phasma_fit.py

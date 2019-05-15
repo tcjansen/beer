@@ -1,3 +1,6 @@
+# There's probably a much more streamlined way of going about this but..
+# maybe later.
+
 import numpy as np
 import mcmc
 import os
